@@ -24,13 +24,14 @@ X=data[feat]
 train_X, val_X, train_y, val_y = train_test_split(X, y, random_state = 1)
 
 v=0
-mi=getmar(50,X,y,feat)
+mi=getmar(1,X,y,feat)
 s=0
-for i in range(1,1000):
+for i in {4,178,5}:
     print(i)
     v=getmar(i,X,y,feat)
     if v<=mi:
         mi=v
         s=i
+
 print(s)
 print(mi)

@@ -12,8 +12,7 @@ feat = ['MSSubClass',
     '2ndFlrSF','LowQualFinSF','GrLivArea','FullBath','HalfBath',
     'BedroomAbvGr','KitchenAbvGr','TotRmsAbvGrd','Fireplaces',
     'WoodDeckSF','OpenPorchSF','EnclosedPorch','3SsnPorch',
-    'ScreenPorch']
-    #,'YrSold','PoolArea'
+    'ScreenPorch','PoolArea','YrSold']
 X= data[feat]
 train_X, val_X, train_y, val_y = train_test_split(X, y, random_state = 1)
 model=RandomForestRegressor(n_estimators=178,random_state=1)
